@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorenza Eduvige - Fisioterapia Neurofuncional Infantil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-blue': {
+                light: '#E0F2FE',
+                DEFAULT: '#0EA5E9',
+                dark: '#0369A1',
+              },
+              'brand-green': {
+                light: '#D1FAE5',
+                DEFAULT: '#10B981',
+                dark: '#047857',
+              },
+              'brand-text': '#374151',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+        .hamburger-icon.hidden, .close-icon.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-brand-text">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="flex-shrink-0 text-xl font-bold text-brand-blue-dark">
+                        Lorenza Eduvige
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#sobre" class="text-gray-600 hover:text-brand-blue-dark transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                        <a href="#servicos" class="text-gray-600 hover:text-brand-blue-dark transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Serviços</a>
+                        <a href="#abordagem" class="text-gray-600 hover:text-brand-blue-dark transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Abordagem</a>
+                        <a href="#depoimentos" class="text-gray-600 hover:text-brand-blue-dark transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Depoimentos</a>
+                        <a href="#contato" class="text-gray-600 hover:text-brand-blue-dark transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Contato</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="menu-button" type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-brand-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg class="hamburger-icon block h-6 w-6" xmlns="http://www.w.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="close-icon hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="nav-link text-gray-600 hover:bg-gray-100 hover:text-brand-blue-dark block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+                <a href="#servicos" class="nav-link text-gray-600 hover:bg-gray-100 hover:text-brand-blue-dark block px-3 py-2 rounded-md text-base font-medium">Serviços</a>
+                <a href="#abordagem" class="nav-link text-gray-600 hover:bg-gray-100 hover:text-brand-blue-dark block px-3 py-2 rounded-md text-base font-medium">Abordagem</a>
+                <a href="#depoimentos" class="nav-link text-gray-600 hover:bg-gray-100 hover:text-brand-blue-dark block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
+                <a href="#contato" class="nav-link text-gray-600 hover:bg-gray-100 hover:text-brand-blue-dark block px-3 py-2 rounded-md text-base font-medium">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-brand-blue-light pt-16 pb-24 sm:pt-24 sm:pb-32 scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-blue-dark tracking-tight">
+                    Fisioterapia Neurofuncional Infantil
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-brand-text">
+                    Transformando vidas, um movimento de cada vez. Cuidado especializado para o desenvolvimento e bem-estar do seu filho.
+                </p>
+                <div class="mt-10">
+                    <a href="#contato" class="bg-brand-blue hover:bg-brand-blue-dark text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                        Agende uma Avaliação
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="py-20 sm:py-28 bg-white scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                    <div class="md:col-span-5 flex justify-center items-center">
+                        <img src="https://picsum.photos/seed/physiotherapist/600/600" alt="Lorenza Eduvige, Fisioterapeuta" class="w-72 h-72 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl border-8 border-white" />
+                    </div>
+                    <div class="md:col-span-7">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue-dark mb-4">
+                            Lorenza Eduvige
+                        </h2>
+                        <p class="text-lg text-brand-text mb-6">
+                            Fisioterapeuta apaixonada pelo universo infantil, com especialização em neurologia. Minha missão é guiar cada criança em sua jornada de desenvolvimento, utilizando abordagens terapêuticas que combinam ciência, ludicidade e afeto para alcançar resultados que transformam vidas.
+                        </p>
+                        <p class="text-brand-text mb-8">
+                            Acredito no poder da intervenção precoce e no tratamento individualizado, sempre em parceria com a família, para que juntos possamos celebrar cada nova conquista. Meu compromisso é com a independência, a funcionalidade e, acima de tudo, com o sorriso de cada pequeno paciente.
+                        </p>
+                         <p class="text-md font-semibold text-brand-blue-dark">
+                            CREFITO-3 / 123456-F
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="py-20 sm:py-28 bg-brand-blue-light scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue-dark">Serviços Oferecidos</h2>
+                    <p class="mt-4 text-lg text-brand-text max-w-2xl mx-auto">
+                        Cuidado especializado e individualizado para cada fase do desenvolvimento infantil.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c.252-.02.507-.02.768 0l.313.052c.264.044.518.11.76.194.242.084.475.19.696.315.22.125.433.268.63.432.197.164.38.348.548.552.168.204.32.423.456.658.136.234.254.483.354.742.1.259.18.533.24.818.06.285.1.58.1.884v.266c0 .296-.032.585-.094.863a3.743 3.743 0 01-.248.84c-.09.25-.2.49-.32.714a4.493 4.493 0 01-.453-.665c-.16.202-.332.39-.516.562-.184.172-.38.328-.588.468a5.016 5.016 0 01-.67.43c-.24.133-.488.248-.744.346h-2.132a5.016 5.016 0 01-.744-.346 5.013 5.013 0 01-.588-.468 4.49 4.49 0 01-.516-.562 4.493 4.493 0 01-.453-.665c-.12-.224-.23-.464-.32-.714a3.744 3.744 0 01-.248-.84c-.062-.278-.094-.567-.094-.863v-.266c0-.303.04-.6.1-.884.06-.285.14-.56.24-.818.1-.259.218-.508.354-.742.136-.235.288-.454.456-.658.168-.204.35-.388.548-.552.197-.164.41-.307.63-.432.22-.125.453-.23.696-.315.242-.084.496-.15.76-.194l.313-.052z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L15 14.5M14.25 9.75c.252-.02.507-.02.768 0l.313.052c.264.044.518.11.76.194.242.084.475.19.696.315.22.125.433.268.63.432.197.164.38.348.548.552.168.204.32.423.456.658.136.234.254.483.354.742.1.259.18.533.24.818.06.285.1.58.1.884v.266c0 .296-.032.585-.094.863a3.743 3.743 0 01-.248.84c-.09.25-.2.49-.32.714a4.493 4.493 0 01-.453-.665c-.16.202-.332.39-.516.562-.184.172-.38.328-.588.468a5.016 5.016 0 01-.67.43c-.24.133-.488.248-.744.346h-2.132a5.016 5.016 0 01-.744-.346 5.013 5.013 0 01-.588-.468 4.49 4.49 0 01-.516-.562 4.493 4.493 0 01-.453-.665c-.12-.224-.23-.464-.32-.714a3.744 3.744 0 01-.248-.84c-.062-.278-.094-.567-.094-.863v-.266c0-.303.04-.6.1-.884.06-.285.14-.56.24-.818.1-.259.218-.508.354-.742.136-.235.288-.454.456-.658.168-.204.35-.388.548-.552.197-.164.41-.307.63-.432.22-.125.453-.23.696-.315.242-.084.496-.15.76-.194l.313-.052z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Avaliação Neurofuncional</h3>
+                        <p class="text-brand-text flex-grow">Análise completa do desenvolvimento motor, tônus muscular, reflexos e habilidades funcionais para um diagnóstico preciso.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Intervenção Precoce</h3>
+                        <p class="text-brand-text flex-grow">Atuação essencial nos primeiros anos de vida para estimular o desenvolvimento motor e prevenir futuras complicações.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 0 0-10 10c0 3.54 1.83 6.64 4.5 8.36.2.13.43.2.66.2.22 0 .43-.07.62-.2.37-.33.45-.88.18-1.32A7.04 7.04 0 0 1 7 12c0-3.86 3.14-7 7-7s7 3.14 7 7a7.04 7.04 0 0 1-1.14 3.96c-.27.44-.19.99.18 1.32.19.13.4.2.62.2.23 0 .46-.07.66-.2A10 10 0 0 0 22 12a10 10 0 0 0-10-10z M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Paralisia Cerebral</h3>
+                        <p class="text-brand-text flex-grow">Planos de tratamento focados em melhorar a mobilidade, a postura e a independência funcional em crianças com PC.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                     <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5c4.69 0 8.5 3.81 8.5 8.5s-3.81 8.5-8.5 8.5S3.5 17.69 3.5 13 7.31 4.5 12 4.5zm0 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm-4.3 10.8a6.5 6.5 0 0 1 8.6 0" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Síndrome de Down</h3>
+                        <p class="text-brand-text flex-grow">Estímulo ao desenvolvimento motor, equilíbrio e coordenação para promover a autonomia e a inclusão social.</p>
+                    </div>
+                     <!-- Service Card 5 -->
+                     <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Atraso no Desenvolvimento</h3>
+                        <p class="text-brand-text flex-grow">Intervenção para ajudar crianças a atingir marcos motores importantes, como sentar, engatinhar e andar.</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center text-center transform hover:-translate-y-2">
+                        <div class="bg-brand-blue-light text-brand-blue-dark rounded-full p-4 mb-6 inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue-dark mb-3">Integração Sensorial</h3>
+                        <p class="text-brand-text flex-grow">Terapias que ajudam a criança a processar e responder adequadamente às informações sensoriais do ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="abordagem" class="py-20 sm:py-28 bg-white scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue-dark mb-6">Minha Abordagem</h2>
+                        <p class="text-lg text-brand-text mb-8">
+                            Acredito em uma fisioterapia que vai além dos exercícios. Minha metodologia integra técnica, ciência e afeto para promover um desenvolvimento integral e feliz.
+                        </p>
+                        <div class="space-y-8">
+                            <!-- Approach Item 1 -->
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 bg-brand-green-light text-brand-green-dark rounded-lg p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.562L16.25 21.75l-.648-1.188a2.25 2.25 0 01-1.423-1.423L13.25 18.5l1.188-.648a2.25 2.25 0 011.423 1.423l.648 1.188z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-brand-blue-dark">Terapia Lúdica</h4>
+                                    <p class="mt-1 text-brand-text">Utilizo o brincar como principal ferramenta terapêutica, tornando as sessões divertidas, motivadoras e eficazes.</p>
+                                </div>
+                            </div>
+                            <!-- Approach Item 2 -->
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 bg-brand-green-light text-brand-green-dark rounded-lg p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.228a4.5 4.5 0 00-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 001.13-1.897M16.863 4.487c0 1.078-.87 1.948-1.948 1.948s-1.948-.87-1.948-1.948c0-1.078.87-1.948 1.948-1.948s1.948.87 1.948 1.948z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75a4.5 4.5 0 110-9 4.5 4.5 0 010 9z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M9 21.75a2.25 2.25 0 01-2.25-2.25v-1.372c0-.526.194-1.026.543-1.414l.674-.673a.75.75 0 011.06 0l.674.673c.349.388.543.888.543 1.414v1.372A2.25 2.25 0 019 21.75z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-brand-blue-dark">Foco na Família</h4>
+                                    <p class="mt-1 text-brand-text">A família é parte essencial do processo. Ofereço orientação e suporte para que os pais possam continuar o estímulo em casa.</p>
+                                </div>
+                            </div>
+                            <!-- Approach Item 3 -->
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 bg-brand-green-light text-brand-green-dark rounded-lg p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-brand-blue-dark">Metas Funcionais</h4>
+                                    <p class="mt-1 text-brand-text">Defino objetivos claros e realistas junto com a família, focados em atividades do dia a dia que importam para a criança.</p>
+                                </div>
+                            </div>
+                             <!-- Approach Item 4 -->
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 bg-brand-green-light text-brand-green-dark rounded-lg p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-brand-blue-dark">Cuidado Humanizado</h4>
+                                    <p class="mt-1 text-brand-text">Cada sessão é conduzida com empatia, respeito e carinho, construindo um vínculo de confiança com a criança e a família.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="https://picsum.photos/seed/therapy/600/600" alt="Criança em sessão de fisioterapia" class="rounded-2xl shadow-xl object-cover w-full h-full"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="depoimentos" class="py-20 sm:py-28 bg-brand-blue-light scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue-dark">O que os pais dizem</h2>
+                    <p class="mt-4 text-lg text-brand-text max-w-2xl mx-auto">
+                        O carinho e a confiança que construímos com cada família é o nosso maior orgulho.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <blockquote class="flex flex-col h-full bg-white">
+                            <div class="flex-grow bg-white">
+                                <p class="text-brand-text">"A Dra. Ana foi um anjo na vida do nosso filho. A evolução dele desde que começou a terapia é incrível. Somos eternamente gratos pelo profissionalismo e, principalmente, pelo carinho."</p>
+                            </div>
+                            <footer class="mt-6 bg-white">
+                                <p class="font-semibold text-brand-blue-dark">Família Silva</p>
+                                <p class="text-sm text-gray-500">Pais do pequeno Lucas</p>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <!-- Testimonial Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <blockquote class="flex flex-col h-full bg-white">
+                            <div class="flex-grow bg-white">
+                                <p class="text-brand-text">"Encontramos na Dra. Ana a segurança que precisávamos. Ela não só cuida da nossa filha, mas nos ensina a participar ativamente do desenvolvimento dela. Uma profissional exemplar!"</p>
+                            </div>
+                            <footer class="mt-6 bg-white">
+                                <p class="font-semibold text-brand-blue-dark">Mariana L.</p>
+                                <p class="text-sm text-gray-500">Mãe da Sofia</p>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <!-- Testimonial Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                         <blockquote class="flex flex-col h-full bg-white">
+                            <div class="flex-grow bg-white">
+                                <p class="text-brand-text">"Cada sessão é uma vitória! Ver a alegria do meu filho ao interagir com a Dra. Ana e superar seus desafios não tem preço. Recomendo de olhos fechados!"</p>
+                            </div>
+                            <footer class="mt-6 bg-white">
+                                <p class="font-semibold text-brand-blue-dark">Carlos e Joana</p>
+                                <p class="text-sm text-gray-500">Pais do Arthur</p>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="py-20 sm:py-28 bg-white scroll-mt-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-brand-blue-dark">Entre em Contato</h2>
+                    <p class="mt-4 text-lg text-brand-text max-w-2xl mx-auto">
+                        Vamos conversar sobre como posso ajudar seu filho. Agende uma avaliação ou tire suas dúvidas.
+                    </p>
+                </div>
+                <div class="max-w-6xl mx-auto bg-white p-8 sm:p-12 rounded-2xl shadow-xl">
+                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                       <!-- Contact Info -->
+                       <div class="flex flex-col justify-center">
+                           <h3 class="text-2xl font-bold text-brand-blue-dark mb-6">Informações de Contato</h3>
+                           <div class="space-y-6 text-brand-text">
+                               <div class="flex items-start">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-brand-blue flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                   <div>
+                                       <h4 class="font-semibold">Endereço</h4>
+                                       <p>Rua Fictícia, 123 - Bairro Imaginário</p>
+                                       <p>Cidade/Estado, CEP 00000-000</p>
+                                   </div>
+                               </div>
+                               <div class="flex items-start">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-brand-blue flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                   <div>
+                                       <h4 class="font-semibold">Email</h4>
+                                       <a href="mailto:contato@draanacosta.com.br" class="hover:text-brand-blue">contato@draanacosta.com.br</a>
+                                   </div>
+                               </div>
+                               <div class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-brand-blue flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                   <div>
+                                       <h4 class="font-semibold">Telefone</h4>
+                                       <a href="tel:+5500999999999" class="hover:text-brand-blue">(00) 99999-9999</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- Contact Form -->
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
+                                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-blue focus:border-brand-blue" />
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-blue focus:border-brand-blue" />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700">Assunto</label>
+                                <input type="text" name="subject" id="subject" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-blue focus:border-brand-blue" />
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                                <textarea name="message" id="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-blue focus:border-brand-blue"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="w-full sm:w-auto inline-flex justify-center py-3 px-12 border border-transparent shadow-lg text-base font-medium rounded-full text-white bg-brand-blue hover:bg-brand-blue-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue transition-colors duration-300">
+                                    Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue-dark text-white">
+      <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="mb-2 text-lg font-semibold">Lorenza Eduvige - Fisioterapia Neurofuncional Infantil</p>
+          <p class="text-brand-blue-light mb-4">
+            Endereço: Rua Fictícia, 123 - Bairro Imaginário, Cidade/Estado
+            <br/>
+            Telefone: (00) 99999-9999 | Email: contato@draanacosta.com.br
+          </p>
+          <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="text-brand-blue-light hover:text-white transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465 2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363.416 2.427.465C9.53 2.013 9.884 2 12.315 2zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Instagram</span>
+            </a>
+          </div>
+          <p class="text-sm text-gray-400">
+            &copy; 2024 Lorenza Eduvige. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = menuButton.querySelector('.hamburger-icon');
+            const closeIcon = menuButton.querySelector('.close-icon');
+            const navLinks = mobileMenu.querySelectorAll('.nav-link');
+            const contactForm = document.getElementById('contact-form');
+
+            // Toggle mobile menu
+            menuButton.addEventListener('click', () => {
+                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+
+            // Close mobile menu on link click
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuButton.setAttribute('aria-expanded', 'false');
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                });
+            });
+
+            // Handle contact form submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    alert('Obrigado pelo seu contato! Mensagem enviada com sucesso. (Funcionalidade de exemplo)');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
